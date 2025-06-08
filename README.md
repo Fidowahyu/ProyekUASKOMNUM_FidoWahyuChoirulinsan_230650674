@@ -4,30 +4,34 @@
 ## Nama: Fido Wahyu Choirulinsan
 ## NPM: 2306250674
 
-Proyek ini mengimplementasikan **metode Richardson Extrapolation** untuk menghitung **turunan numerik** dari fungsi sinus dengan bahasa pemrograman **C++**. Teknik ini sangat berguna dalam memperkirakan turunan ketika bentuk analitik sulit diperoleh atau data hanya tersedia dalam bentuk diskret. 
+## 📌 Deskripsi Proyek
+
+Proyek ini mengimplementasikan metode **Richardson Extrapolation** untuk memperkirakan **turunan pertama** dari fungsi sinus menggunakan pendekatan numerik berbasis *central difference*. Teknik ini digunakan untuk meningkatkan akurasi estimasi turunan dibandingkan metode numerik biasa, terutama saat bekerja dengan data diskrit atau tidak tersedia bentuk analitik fungsi.
+
+Metode ini relevan dalam:
+- Situasi di mana fungsi hanya tersedia dalam bentuk diskrit
+- Peningkatan akurasi numerik tanpa memperkecil `h` terlalu ekstrem
+- Pengembangan algoritma turunan numerik dalam bahasa pemrograman C++
 
 ---
 
-## Deskripsi 
+## Outline Program
 
-- **Topik**: Numerical Differentiation dengan Richardson Extrapolation
-- **Fungsi yang dikaji**: `f(x) = sin(x)`
-- **Bahasa**: C++
-- **Metode**: Central Difference dan Richardson Extrapolation
-- **Tujuan**: Membandingkan hasil turunan numerik dengan hasil analitik (turunan `cos(x)`) untuk mengukur akurasi metode.
+### Input:
+- Fungsi `f(x) = sin(x)`
+- Nilai titik `x = π/4` (dapat dimodifikasi)
+- Nilai langkah `h` (misal: 0.1, 0.01, 0.001)
+
+### Proses:
+1. Hitung turunan numerik dengan *central difference* untuk setiap nilai `h`
+2. Hitung Richardson Extrapolation dari dua estimasi sebelumnya
+3. Hitung nilai analitik dari `f'(x) = cos(x)`
+4. Bandingkan hasil numerik dan analitik, serta hitung error absolut
+
+### Output:
+- Tabel hasil estimasi turunan, analitik, dan error
+- (Opsional) File CSV berisi komponen hasil estimasi
+- Visualisasi grafik error (jika diimplementasikan)
 
 ---
-
-## Latar Belakang
-
-Dalam praktik rekayasa dan sains, tidak semua fungsi bisa diturunkan secara eksak. Pendekatan numerik seperti **finite difference** sering digunakan, namun akurasinya terbatas oleh nilai langkah `h`. **Richardson Extrapolation** adalah teknik yang meningkatkan akurasi dengan cara menggabungkan dua estimasi turunan numerik yang dihitung dengan nilai `h` yang berbeda, sehingga error dominan dapat dieliminasi.
-
----
-
-## Metodologi
-
-### 1. Central Difference Formula
-
-Rumus dasar untuk menghitung turunan pertama:
-```math
-f'(x) ≈ (f(x + h) - f(x - h)) / (2h)
+Link youtube: 
