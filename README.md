@@ -1,4 +1,5 @@
-# Richardson Extrapolation untuk Perhitungan Turunan Fungsi Sinus
+# Implementasi Metode Richardson Extrapolation untuk Perhitungan Turunan Numerik pada Fungsi Sinus
+
 ## Proyek UAS mata kuliah Komputasi Numerik
 
 ## Nama: Fido Wahyu Choirulinsan
