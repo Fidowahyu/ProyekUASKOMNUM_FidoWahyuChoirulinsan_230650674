@@ -5,7 +5,7 @@
 ## Nama: Fido Wahyu Choirulinsan
 ## NPM: 2306250674
 
-## 📌 Deskripsi Proyek
+## Deskripsi Proyek
 
 Proyek ini mengimplementasikan metode **Richardson Extrapolation** untuk memperkirakan **turunan pertama** dari fungsi sinus menggunakan pendekatan numerik berbasis *central difference*. Teknik ini digunakan untuk meningkatkan akurasi estimasi turunan dibandingkan metode numerik biasa, terutama saat bekerja dengan data diskrit atau tidak tersedia bentuk analitik fungsi.
 
@@ -36,3 +36,4 @@ Metode ini relevan dalam:
 
 ---
 Link youtube: 
+https://youtu.be/Cc3XtSQ8umU 
