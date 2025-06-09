@@ -30,9 +30,10 @@ Metode ini relevan dalam:
 4. Bandingkan hasil numerik dan analitik, serta hitung error absolut
 
 ### Output:
-- Tabel hasil estimasi turunan, analitik, dan error
-- (Opsional) File CSV berisi komponen hasil estimasi
-- Visualisasi grafik error (jika diimplementasikan)
+Program akan menampilkan:
+- Nilai turunan numerik (Richardson derivative)
+- Nilai turunan analitik (Analytical derivative)
+- Error antara keduanya
 
 ---
 Link youtube: 
